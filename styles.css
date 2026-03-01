@@ -1,14 +1,15 @@
 :root{
-  --bg:#0b0f14;
-  --card:#111826;
-  --card2:#0f1724;
-  --text:#e8eef7;
-  --muted:#a8b3c7;
-  --line:rgba(255,255,255,.10);
-  --primary:#4ad295;
-  --primary2:#2bbdff;
-  --warn:#ffd166;
-  --shadow: 0 12px 40px rgba(0,0,0,.35);
+  --bg:#f6f7fb;
+  --card:#ffffff;
+  --card2:#ffffff;
+  --text:#0b1220;
+  --muted:#55627a;
+  --line:rgba(11,18,32,.12);
+  --primary:#18b57c;
+  --primary2:#1aa7ff;
+  --warn:#ffb703;
+
+  --shadow: 0 10px 26px rgba(11,18,32,.10);
   --radius:16px;
   --max:1080px;
 }
