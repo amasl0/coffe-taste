@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Подберём кофе под ваш вкус — за 1 минуту. Казахстан." />
+  <title>Подбор кофе под вкус — Казахстан</title>
+
+  <link rel="preconnect" href="https://www.googletagmanager.com" />
+  <link rel="stylesheet" href="./styles.css" />
+
+  <!-- GA4 (замени G-XXXXXXXXXX) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX', { anonymize_ip: true });
+  </script>
+
+  <!-- Yandex Metrika (замени COUNTER_ID) -->
+  <script>
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+      m[i].l=1*new Date();
+      for (var j=0;j<document.scripts.length;j++) {if (document.scripts[j].src===r) {return;}}
+      k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(COUNTER_ID, "init", {
+      clickmap:true,
+      trackLinks:true,
+      accurateTrackBounce:true,
+      webvisor:true
+    });
+  </script>
+</head>
+
+<body>
+  <a class="skip" href="#quiz">Перейти к подбору</a>
+
+  <header class="header">
+    <div class="container header__inner">
+      <div class="brand">
+        <div class="brand__logo" aria-hidden="true">☕</div>
+        <div class="brand__text">
+          <div class="brand__name">Обжарка кофе .kz</div>
+          <div class="brand__tag">Подбор под вкус • свежая обжарка</div>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#how">Как работает</a>
+        <a href="#local">Почему для KZ</a>
+        <a href="#reviews">Отзывы</a>
+      </nav>
+
+      <button class="btn btn--ghost header__cta" data-scrollto="#quiz" data-track="cta_header">
+        Пройти подбор
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <div class="badge" id="ab-badge">A/B: variant —</div>
+
+          <h1 class="h1" id="hero-title">
+            Подберём кофе, который вам точно понравится — с первого раза
+          </h1>
+
+          <p class="lead" id="hero-subtitle">
+            Ответьте на 5 коротких вопросов — получите рекомендацию под ваш вкус и способ приготовления
+          </p>
+
+          <div class="hero__actions">
+            <button class="btn btn--primary" data-scrollto="#quiz" data-track="cta_hero">
+              Пройти подбор за 1 минуту
+            </button>
+            <button class="btn btn--secondary" data-scrollto="#pain" data-track="cta_learn_more">
+              Почему это важно
+            </button>
+          </div>
+
+          <ul class="checks">
+            <li>Бесплатно</li>
+            <li>Без регистрации</li>
+            <li>Подходит для турки, эспрессо и фильтра</li>
+          </ul>
+
+          <div class="micro">
+            <span class="micro__pill">⚡ Быстро</span>
+            <span class="micro__pill">🎯 Под ваш вкус</span>
+            <span class="micro__pill">🛡️ Снижаем риск</span>
+          </div>
+        </div>
+
+        <div class="hero__card" aria-label="Карточка-превью подбора">
+          <div class="card">
+            <div class="card__top">
+              <div class="card__kpi">
+                <div class="kpi__num">5</div>
+                <div class="kpi__label">вопросов</div>
+              </div>
+              <div class="card__kpi">
+                <div class="kpi__num">~60</div>
+                <div class="kpi__label">секунд</div>
+              </div>
+              <div class="card__kpi">
+                <div class="kpi__num">1</div>
+                <div class="kpi__label">рекомендация</div>
+              </div>
+            </div>
+
+            <div class="card__body">
+              <div class="mini">
+                <div class="mini__title">Пример результата</div>
+                <div class="mini__row"><span>Профиль вкуса</span><b>Шоколад / орех</b></div>
+                <div class="mini__row"><span>Обжарка</span><b>Средняя</b></div>
+                <div class="mini__row"><span>Для</span><b>Молочных напитков</b></div>
+                <div class="mini__row"><span>Способ</span><b>Эспрессо</b></div>
+              </div>
+
+              <div class="note">
+                Мы не грузим specialty-терминами — говорим «как будет на вкус».
+              </div>
+            </div>
+
+            <div class="card__footer">
+              <button class="btn btn--primary btn--block" data-scrollto="#quiz" data-track="cta_card">
+                Начать подбор
+              </button>
+              <div class="fine">Никаких оплат на этом шаге. Сначала — уверенность.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAIN -->
+    <section class="section" id="pain">
+      <div class="container">
+        <h2 class="h2">Знакомо?</h2>
+        <div class="grid3">
+          <div class="tile">
+            <div class="tile__icon">🍋</div>
+            <div class="tile__title">Слишком кислый</div>
+            <div class="tile__text">Покупали кофе, а он оказался слишком кислым?</div>
+          </div>
+          <div class="tile">
+            <div class="tile__icon">🧾</div>
+            <div class="tile__title">Деньги на ветер</div>
+            <div class="tile__text">Стоит пачка, потому что вкус не подошёл?</div>
+          </div>
+          <div class="tile">
+            <div class="tile__icon">❓</div>
+            <div class="tile__title">Сложно выбрать</div>
+            <div class="tile__text">Не понимаете, чем отличаются сорта и обжарки?</div>
+          </div>
+        </div>
+
+        <div class="callout">
+          <div class="callout__title">Мы убираем риск ошибки</div>
+          <div class="callout__text">
+            Подбор переводит выбор из «угадайки» в понятную рекомендацию под ваш вкус и способ приготовления.
+          </div>
+          <button class="btn btn--primary" data-scrollto="#quiz" data-track="cta_pain">
+            Пройти подбор
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section" id="how">
+      <div class="container">
+        <h2 class="h2">Как работает подбор</h2>
+        <div class="steps">
+          <div class="step">
+            <div class="step__num">1</div>
+            <div class="step__body">
+              <div class="step__title">Отвечаете на вопросы</div>
+              <div class="step__text">Про вкус, молоко и способ приготовления.</div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step__num">2</div>
+            <div class="step__body">
+              <div class="step__title">Мы анализируем предпочтения</div>
+              <div class="step__text">Собираем профиль вкуса без сложных терминов.</div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step__num">3</div>
+            <div class="step__body">
+              <div class="step__title">Получаете персональную рекомендацию</div>
+              <div class="step__text">И варианты, которые подойдут именно вам.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="params">
+          <div class="params__title">Что учитываем</div>
+          <ul class="params__list">
+            <li>Профиль: шоколадный / ореховый / фруктовый</li>
+            <li>Любите ли молоко</li>
+            <li>Способ приготовления</li>
+            <li>Нужен ли яркий бодрящий эффект</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOCAL MARKET -->
+    <section class="section" id="local">
+      <div class="container">
+        <h2 class="h2">Что важно для казахстанских потребителей</h2>
+        <div class="grid2">
+          <div class="panel">
+            <h3 class="h3">Вкус без лишней кислотности</h3>
+            <p>Подбираем в сторону сбалансированного вкуса, чтобы не было «кислого сюрприза».</p>
+          </div>
+          <div class="panel">
+            <h3 class="h3">Под молочные напитки</h3>
+            <p>Если вы пьёте капучино/латте — предложим варианты, которые «держат» молоко.</p>
+          </div>
+          <div class="panel">
+            <h3 class="h3">Средняя / средне-тёмная обжарка</h3>
+            <p>Чаще всего это даёт понятный «кофейный» вкус: шоколад, орех, карамель.</p>
+          </div>
+          <div class="panel">
+            <h3 class="h3">Свежая обжарка и прозрачное происхождение</h3>
+            <p>Указываем дату обжарки и происхождение — чтобы было доверие к качеству.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="section" id="reviews">
+      <div class="container">
+        <h2 class="h2">Первые результаты (MVP)</h2>
+        <div class="grid3">
+          <div class="stat">
+            <div class="stat__num">87%</div>
+            <div class="stat__label">сказали, что вкус совпал с ожиданиями</div>
+          </div>
+          <div class="stat">
+            <div class="stat__num">~1 мин</div>
+            <div class="stat__label">среднее время на подбор</div>
+          </div>
+          <div class="stat">
+            <div class="stat__num">0</div>
+            <div class="stat__label">сложных терминов без объяснения</div>
+          </div>
+        </div>
+
+        <div class="quotes">
+          <figure class="quote">
+            <blockquote>«Наконец-то не кислый. Взял под капучино — зашло с первого раза.»</blockquote>
+            <figcaption>— Тестовый клиент, Алматы</figcaption>
+          </figure>
+          <figure class="quote">
+            <blockquote>«Понравилось, что объяснили вкус простыми словами, без снобизма.»</blockquote>
+            <figcaption>— Тестовый клиент, Астана</figcaption>
+          </figure>
+          <figure class="quote">
+            <blockquote>«Брал в подарок — было страшно ошибиться, но рекомендация сработала.»</blockquote>
+            <figcaption>— Тестовый клиент, Караганда</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- GUARANTEE / OFFER -->
+    <section class="section section--accent" id="offer">
+      <div class="container offer">
+        <div class="offer__text">
+          <h2 class="h2">Снизим риск до нуля</h2>
+          <p class="lead">
+            Если кофе не понравится — поможем заменить бесплатно.
+          </p>
+          <ul class="checks checks--dark">
+            <li>Подберём альтернативу по вкусу</li>
+            <li>Под ваш способ приготовления</li>
+            <li>Без лишних вопросов</li>
+          </ul>
+        </div>
+        <div class="offer__cta">
+          <div class="card card--dark">
+            <div class="card__body">
+              <div class="mini__title">Готовы попробовать?</div>
+              <div class="fine fine--dark">Займёт меньше минуты</div>
+            </div>
+            <div class="card__footer">
+              <button class="btn btn--primary btn--block" data-scrollto="#quiz" data-track="cta_offer">
+                Пройти подбор и получить рекомендацию
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUIZ -->
+    <section class="section" id="quiz">
+      <div class="container">
+        <h2 class="h2">Подбор кофе под ваш вкус</h2>
+        <p class="lead">Ответьте на 5 вопросов — и получите рекомендацию.</p>
+
+        <div class="quiz">
+          <div class="quiz__progress">
+            <div class="progress">
+              <div class="progress__bar" id="progressBar" style="width: 0%"></div>
+            </div>
+            <div class="quiz__meta">
+              <span id="stepText">Шаг 1 из 6</span>
+              <span class="pill" id="timeHint">~ 60 сек</span>
+            </div>
+          </div>
+
+          <div class="quiz__card" id="quizCard" aria-live="polite"></div>
+
+          <div class="quiz__nav">
+            <button class="btn btn--ghost" id="btnBack" disabled>Назад</button>
+            <button class="btn btn--primary" id="btnNext">Дальше</button>
+          </div>
+
+          <div class="quiz__fine">
+            Мы используем ответы только для рекомендации и связи по заказу. Без спама.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="section">
+      <div class="container final">
+        <h2 class="h2">Хотите рекомендацию под ваш вкус?</h2>
+        <p class="lead">Займёт меньше минуты.</p>
+        <button class="btn btn--primary" data-scrollto="#quiz" data-track="cta_final">
+          Пройти подбор и получить рекомендацию
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__left">
+        <div class="brand__name">Обжарка кофе .kz</div>
+        <div class="fine">MVP лендинг для проверки гипотезы. Казахстан.</div>
+      </div>
+      <div class="footer__right">
+        <a href="#quiz">Подбор</a>
+        <a href="#offer">Гарантия</a>
+        <a href="#how">Как работает</a>
+      </div>
+    </div>
+  </footer>
+
+  <script defer src="./app.js"></script>
+</body>
+</html>
